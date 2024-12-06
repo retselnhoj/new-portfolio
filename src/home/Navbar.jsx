@@ -43,17 +43,6 @@ function Navbar() {
                                 className="text-blue-600 hover:text-blue-800 transition-colors"
                             />
                         </a>
-                        {/* Instagram */}
-                        <a
-                            href="https://www.instagram.com/johnlester/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <FaInstagram
-                                size={24}
-                                className="text-pink-500 hover:text-pink-700 transition-colors"
-                            />
-                        </a>
                     </div>
                     <button
                         data-collapse-toggle="navbar-sticky"
