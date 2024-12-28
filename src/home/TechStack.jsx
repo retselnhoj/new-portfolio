@@ -5,7 +5,7 @@ import HtmlImage from '../assets/html.png'
 import JsImage from '../assets/js.png'
 import GitImage from '../assets/git.png'
 import GithubImage from '../assets/github.png'
-import FirebaseImage from '../assets/firebase.png'
+import MongoDBImage from '../assets/mongodb.png'
 import ReactImage from '../assets/react.png'
 import RestImage from '../assets/rest.png'
 
@@ -44,7 +44,7 @@ function TechStack() {
                 <img className="w-[50px] h-[50px] bg-white rounded-full" src={GithubImage} alt=""/>
             </div>
             <div className="col-span-1 py-6 flex justify-center items-center bg-[#222222]/[30%] border border-[#2C2C2C] rounded-lg">
-                <img className="w-[50px] h-[50px]" src={FirebaseImage} alt=""/>
+                <img className="w-[50px] h-[50px]" src={MongoDBImage} alt=""/>
             </div>
             <div className="col-span-1 py-6 flex justify-center items-center bg-[#222222]/[30%] border border-[#2C2C2C] rounded-lg">
                 <img className="w-[56px] h-[50px]" src={ReactImage} alt=""/>
