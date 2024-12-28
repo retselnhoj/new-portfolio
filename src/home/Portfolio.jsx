@@ -15,6 +15,24 @@ function Portfolio() {
         AOS.refresh();
     }, []);
 
+    const portfolioItems = [
+        {
+            img: Portfolio1,
+            link: 'https://bookmona.netlify.app/homepage',
+            alt: 'Bookmona Homepage'
+        },
+        {
+            img: Portfolio2,
+            link: 'https://master--quickfinder-project2.netlify.app/',
+            alt: 'QuickFinder Project'
+        },
+        {
+            img: Portfolio3,
+            link: 'https://fresh-baskets.netlify.app/',
+            alt: 'Fresh Baskets'
+        }
+    ];
+
     return (
         <section id="portfolio" className="max-w-screen-xl mx-auto py-16 px-6">
             <h3
@@ -32,22 +50,25 @@ function Portfolio() {
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {[Portfolio1, Portfolio2, Portfolio3].map((img, index) => (
-                    <div
+                {portfolioItems.map((item, index) => (
+                    <a
                         key={index}
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         data-aos="zoom-in"
                         data-aos-delay={`${index * 200}`}
                         className="relative group rounded-lg overflow-hidden shadow-lg"
                     >
                         <img
-                            src={img}
-                            alt={`portfolio-${index + 1}`}
+                            src={item.img}
+                            alt={item.alt}
                             className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:opacity-80"
                         />
                         <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
                             <p className="text-white font-bold text-lg">View Project</p>
                         </div>
-                    </div>
+                    </a>
                 ))}
             </div>
         </section>
