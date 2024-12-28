@@ -18,7 +18,7 @@ function Portfolio() {
     const portfolioItems = [
         {
             img: Portfolio1,
-            link: 'https://bookmona.netlify.app/homepage',
+            link: 'https://bookmona.netlify.app/',
             alt: 'Bookmona Homepage'
         },
         {
