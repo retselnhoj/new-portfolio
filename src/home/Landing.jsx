@@ -11,10 +11,16 @@ function Landing() {
   return (
     <div>
       <Navbar />
+      <section id="hero">
       <Hero />
+      </section>
+      <section id="services">
       <Services/>
+      </section>
       <TechStack/>
+      <section id="portfolio">
       <Portfolio/>
+      </section>
       <Contact/>
       <Footer/>
     </div>
