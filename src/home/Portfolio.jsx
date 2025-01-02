@@ -18,18 +18,18 @@ function Portfolio() {
     const portfolioItems = [
         {
             img: Portfolio1,
-            link: 'https://bookmona.netlify.app/',
-            alt: 'Bookmona Homepage'
-        },
-        {
-            img: Portfolio2,
             link: 'https://master--quickfinder-project2.netlify.app/',
             alt: 'QuickFinder Project'
         },
         {
-            img: Portfolio3,
+            img: Portfolio2,
             link: 'https://fresh-baskets.netlify.app/',
             alt: 'Fresh Baskets'
+        },
+        {
+            img: Portfolio3,
+            link: 'https://bookmona.netlify.app/',
+            alt: 'Bookmona Homepage'
         }
     ];
 
